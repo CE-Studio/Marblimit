@@ -2,17 +2,18 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class LockCam : MonoBehaviour
-{
+public class LockCam : MonoBehaviour {
+
+    private Vector3 ballPos;
+
     // Start is called before the first frame update
-    void Start()
-    {
+    void Start() {
         
     }
 
     // Update is called once per frame
-    void Update()
-    {
-        
+    void FixedUpdate() {
+        ballPos = GameObject.Find("PlayerBall").transform.position;
+        transform.position = ballPos + new Vector3(0, 5, -10);
     }
 }
