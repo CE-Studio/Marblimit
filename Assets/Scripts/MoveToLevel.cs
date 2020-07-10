@@ -6,6 +6,6 @@ public class MoveToLevel : MonoBehaviour
 {
     public void GoToLevel()
     {
-
+        
     }
 }
