@@ -16,7 +16,7 @@ public class playerMove : MonoBehaviour {
     // Update is called once per frame
     void FixedUpdate() {
         rb.AddForce(Input.GetAxis("Horizontal") * force, 0f, Input.GetAxis("Vertical") * force);
-        if ((Inpupt.GetAxis("Horizontal") != 0) || (Inpupt.GetAxis("Vertical") != 0)) {
+        if ((Input.GetAxis("Horizontal") != 0) || (Input.GetAxis("Vertical") != 0)) {
             fuel -= Time.deltaTime;
             print(fuel);
         }
