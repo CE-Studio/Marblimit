@@ -18,7 +18,6 @@ public class playerMove : MonoBehaviour {
         rb.AddForce(Input.GetAxis("Horizontal") * force, 0f, Input.GetAxis("Vertical") * force);
         if ((Input.GetAxis("Horizontal") != 0) || (Input.GetAxis("Vertical") != 0)) {
             fuel -= Time.deltaTime;
-            print(fuel);
         }
     }
 }
