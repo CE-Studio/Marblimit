@@ -196,7 +196,7 @@ Rigidbody:
   serializedVersion: 2
   m_Mass: 1
   m_Drag: 0
-  m_AngularDrag: 0.05
+  m_AngularDrag: 0
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -289,6 +289,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 177178233}
+  rspawn: 0
 --- !u!1 &544391837
 GameObject:
   m_ObjectHideFlags: 0
@@ -464,6 +465,25 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 27.723001, y: 125.66, z: 106.386}
+--- !u!1 &1024999712 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: c0938ab92d7d72d48890be2cb5ba571c,
+    type: 3}
+  m_PrefabInstance: {fileID: 1940892321}
+  m_PrefabAsset: {fileID: 0}
+--- !u!135 &1024999714
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1024999712}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 3.3
+  m_Center: {x: 0, y: 0, z: 0.1}
 --- !u!1 &1153323089
 GameObject:
   m_ObjectHideFlags: 0
