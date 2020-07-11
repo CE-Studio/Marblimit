@@ -10,6 +10,7 @@ public class win : MonoBehaviour
     public GameObject sspin;
     public GameObject lift;
     public GameObject wall;
+    public GameObject pb;
     private float i = 0f;
     public static float gameTime = 120f;
     public static int iter = 0;
@@ -38,6 +39,7 @@ public class win : MonoBehaviour
                 GameObject ObjectNameee = Instantiate(sspin, new Vector3(0, 0, 0), Quaternion.identity) as GameObject;
                 GameObject ObjectNameeee = Instantiate(lift, new Vector3(0, 0, 0), Quaternion.identity) as GameObject;
                 GameObject ObjectNameeeee = Instantiate(wall, new Vector3(0, 0, 0), Quaternion.identity) as GameObject;
+                GameObject ObjectNameeeeee = Instantiate(pb, new Vector3(0, 0, 0), Quaternion.identity) as GameObject;
                 i += Random.Range(0f, 1.0f);
             }
         }
@@ -65,6 +67,7 @@ public class win : MonoBehaviour
                 GameObject ObjectNameee = Instantiate(sspin, new Vector3(0, 0, 0), Quaternion.identity) as GameObject;
                 GameObject ObjectNameeee = Instantiate(lift, new Vector3(0, 0, 0), Quaternion.identity) as GameObject;
                 GameObject ObjectNameeeee = Instantiate(wall, new Vector3(0, 0, 0), Quaternion.identity) as GameObject;
+                GameObject ObjectNameeeeee = Instantiate(pb, new Vector3(0, 0, 0), Quaternion.identity) as GameObject;
                 i += Random.Range(0f, 1.0f);
             }
         }
