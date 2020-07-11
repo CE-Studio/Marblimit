@@ -18,6 +18,7 @@ public class win : MonoBehaviour
     public AudioSource alert;
     private bool tog = true;
     public Material test;
+    public static bool hasTimedOut;
 
 
     // Start is called before the first frame update
@@ -53,7 +54,7 @@ public class win : MonoBehaviour
             tog = true;
         }
         if (gameTime < 0f) {
-            SceneManager.LoadScene(sceneName: "ded");
+            hasTimedOut = true;
         }
     }
 

@@ -23,7 +23,7 @@ public class playerMove : MonoBehaviour {
     // Update is called once per frame
     void FixedUpdate() {
         checkRespawn();
-        if (fuel > 0) {
+        if (fuel > 0 || !win.hasTimedOut) {
             if ((Input.GetAxis("Horizontal") != 0 && Mathf.Abs(Input.GetAxis("Horizontal")) >= HorizValueLastFrame) || (Input.GetAxis("Vertical") != 0 && Mathf.Abs(Input.GetAxis("Vertical")) >= VertiValueLastFrame)) {
                 fuel -= Time.deltaTime;
                 if (Input.GetAxis("Vertical") > 0) {
@@ -49,6 +49,11 @@ public class playerMove : MonoBehaviour {
         if (Input.GetKey("escape"))
         {
             SceneManager.LoadScene(sceneName:"Titlescreen");
+        }
+        if (win.hasTimedOut)
+        {
+            rb.velocity = Vector3.zero;
+            rb.angularVelocity = Vector3.zero;
         }
     }
 
