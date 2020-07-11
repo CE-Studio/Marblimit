@@ -6,9 +6,12 @@ public class ToggleMainText : MonoBehaviour
 {
     public static bool mainTextVisible = true;
 
-    void OnTriggerEnter(Collider MainCamera)
+    void OnTriggerEnter(Collider other)
     {
-        mainTextVisible = !mainTextVisible;
+        if (other.CompareTag("MainCamera"))
+        {
+            mainTextVisible = !mainTextVisible;
+        }
     }
 
     void Update()
