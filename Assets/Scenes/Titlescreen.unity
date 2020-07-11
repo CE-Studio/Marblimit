@@ -2661,14 +2661,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1162735139}
-  m_LocalRotation: {x: 0.17156816, y: 0.4500472, z: -0.09071155, w: 0.8716613}
-  m_LocalPosition: {x: -1.66, y: 2.19, z: 0.72}
+  m_LocalRotation: {x: 0.1675555, y: 0.4515565, z: -0.0984666, w: 0.87081933}
+  m_LocalPosition: {x: -1.708, y: 2.3909998, z: 0.698}
   m_LocalScale: {x: 0.20000002, y: 0.19999999, z: 1}
   m_Children:
   - {fileID: 72331008}
   m_Father: {fileID: 839118508}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 22.38, y: 54.57, z: -0.23}
+  m_LocalEulerAnglesHint: {x: 22.38, y: 54.57, z: -1.25}
 --- !u!114 &1162735141
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3267,6 +3267,7 @@ GameObject:
   - component: {fileID: 1415774958}
   - component: {fileID: 1415774960}
   - component: {fileID: 1415774959}
+  - component: {fileID: 1415774961}
   m_Layer: 0
   m_Name: Quit button
   m_TagString: Untagged
@@ -3282,7 +3283,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1415774957}
   m_LocalRotation: {x: 0.13447931, y: 0.4572788, z: -0.11665334, w: 0.87132275}
-  m_LocalPosition: {x: -1.9, y: 0.73, z: 0.7}
+  m_LocalPosition: {x: -2.144, y: 1.0049999, z: 0.537}
   m_LocalScale: {x: 0.20000002, y: 0.19999999, z: 1}
   m_Children:
   - {fileID: 1254352772}
@@ -3353,6 +3354,22 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1415774961
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1415774957}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01942f970dd5d104e87f27165e6b6140, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spriteRenderer: {fileID: 0}
+  inactiveButton: {fileID: 21300000, guid: d17b6f157a1124748b1a7f18a82018db, type: 3}
+  hoveringButton: {fileID: 21300000, guid: bd07139bee8a6f54d8f280fcc122f382, type: 3}
+  pressedButton: {fileID: 21300000, guid: 949fd3bfbd9e65b4faa13b71b05f0b11, type: 3}
 --- !u!1 &1451366084
 GameObject:
   m_ObjectHideFlags: 0
@@ -3778,6 +3795,7 @@ GameObject:
   - component: {fileID: 1662964309}
   - component: {fileID: 1662964311}
   - component: {fileID: 1662964310}
+  - component: {fileID: 1662964312}
   m_Layer: 0
   m_Name: Credits button
   m_TagString: Untagged
@@ -3792,14 +3810,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1662964308}
-  m_LocalRotation: {x: 0.17339909, y: 0.45897752, z: -0.087236136, w: 0.86698455}
-  m_LocalPosition: {x: -1.78, y: 1.48, z: 0.7}
+  m_LocalRotation: {x: 0.16314344, y: 0.4627222, z: -0.1065059, w: 0.86482877}
+  m_LocalPosition: {x: -1.892, y: 1.711, z: 0.642}
   m_LocalScale: {x: 0.20000002, y: 0.19999999, z: 1}
   m_Children:
   - {fileID: 447403737}
   m_Father: {fileID: 839118508}
   m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 22.38, y: 55.89, z: 0.49}
+  m_LocalEulerAnglesHint: {x: 22.38, y: 55.89, z: -2.06}
 --- !u!65 &1662964310
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3863,6 +3881,22 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1662964312
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1662964308}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c02bb52a3defa7e4489b85920314b111, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spriteRenderer: {fileID: 0}
+  inactiveButton: {fileID: 21300000, guid: d17b6f157a1124748b1a7f18a82018db, type: 3}
+  hoveringButton: {fileID: 21300000, guid: bd07139bee8a6f54d8f280fcc122f382, type: 3}
+  pressedButton: {fileID: 21300000, guid: 949fd3bfbd9e65b4faa13b71b05f0b11, type: 3}
 --- !u!1 &1682394149
 GameObject:
   m_ObjectHideFlags: 0
@@ -4452,14 +4486,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1941972722}
-  m_LocalRotation: {x: 0.17716406, y: 0.41933075, z: -0.07931134, w: 0.8868395}
-  m_LocalPosition: {x: -1.71, y: 2.92, z: 0.57}
+  m_LocalRotation: {x: 0.167605, y: 0.4232422, z: -0.09941091, w: 0.8848119}
+  m_LocalPosition: {x: -1.5239999, y: 3.0029998, z: 0.71400005}
   m_LocalScale: {x: 0.20000002, y: 0.19999999, z: 1}
   m_Children:
   - {fileID: 875417751}
   m_Father: {fileID: 839118508}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 22.38, y: 50.71, z: 0.49}
+  m_LocalEulerAnglesHint: {x: 22.38, y: 50.71, z: -2.11}
 --- !u!212 &1941972724
 SpriteRenderer:
   m_ObjectHideFlags: 0
