@@ -19,7 +19,7 @@ public class MainTextControl : MonoBehaviour
         }
         else if (!ToggleMainText.mainTextVisible)
         {
-            transform.position = new Vector3(originalPosition.x, originalPosition.y - 20, originalPosition.z);
+            transform.position = new Vector3(originalPosition.x, originalPosition.y - 30, originalPosition.z);
         }
     }
 }
