@@ -37,7 +37,7 @@ public class playerMove : MonoBehaviour {
             HorizValueLastFrame = Mathf.Abs(Input.GetAxis("Horizontal"));
             VertiValueLastFrame = Mathf.Abs(Input.GetAxis("Vertical"));
         }
-        if (transform.position.y < -100f) {
+        if (transform.position.y < -10f) {
             rspawn = true;
         }
         if (Input.GetKeyDown("space") && transform.position.y < 0.6f) {
