@@ -11,7 +11,8 @@ public class playerMove : MonoBehaviour {
     private float HorizValueLastFrame;
     private float VertiValueLastFrame;
     public static Vector3 spawnpoint;
-    public bool rspawn = false;
+    public static bool rspawn = false;
+    public static bool hit = true;
 
     void Start() {
         spawnpoint = transform.position;
@@ -29,9 +30,9 @@ public class playerMove : MonoBehaviour {
                     rb.AddForce(force, 0f, force * -1f);
                 }
                 if (Input.GetAxis("Horizontal") > 0) {
-                    rb.AddForce(force * -1f, 0f, force * -1f);
-                } else if (Input.GetAxis("Horizontal") < 0) {
                     rb.AddForce(force, 0f, force);
+                } else if (Input.GetAxis("Horizontal") < 0) {
+                    rb.AddForce(force * -1f, 0f, force * -1f);
                 }
             }
             HorizValueLastFrame = Mathf.Abs(Input.GetAxis("Horizontal"));
@@ -39,6 +40,10 @@ public class playerMove : MonoBehaviour {
         }
         if (transform.position.y < -100f) {
             rspawn = true;
+        }
+        if (Input.GetKeyDown("space") && hit) {
+            rb.AddForce(Random.Range(-1000, 1000), Random.Range(500, 1000), Random.Range(-1000, 1000));
+            hit = false;
         }
     }
 
@@ -49,6 +54,15 @@ public class playerMove : MonoBehaviour {
             rb.velocity = Vector3.zero;
             rb.angularVelocity = Vector3.zero;
             fuel = 15f;
+            hit = true;
         }
+    }
+
+    void OnCollisionEnter() {
+        hit = true;
+    }
+
+    void OnCollisionExit() {
+        hit = false;
     }
 }
