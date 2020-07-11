@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class playerMove : MonoBehaviour {
     // Start is called before the first frame update
@@ -43,6 +44,10 @@ public class playerMove : MonoBehaviour {
         }
         if (Input.GetKeyDown("space") && transform.position.y < 0.6f) {
             rb.AddForce(Random.Range(-1000, 1000), Random.Range(500, 1000), Random.Range(-1000, 1000));
+        }
+        if (Input.GetKeyDown("escape"))
+        {
+            SceneManager.LoadScene(sceneName:"Titlescreen");
         }
     }
 
