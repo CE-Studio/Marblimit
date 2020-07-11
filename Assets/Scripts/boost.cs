@@ -13,9 +13,7 @@ public class boost : MonoBehaviour {
 
     // Update is called once per frame
     void Update() {
-        //turn = Mathf.Deg2Rad * transform.rotation.y;
-        turn = transform.rotation.y;
-        Debug.DrawLine(transform.position + new Vector3(0f, 0.5f, 0f), transform.position + new Vector3(Mathf.Sin(turn) * stren, 0.5f, Mathf.Cos(turn) * stren));
+        turn = Mathf.Deg2Rad * (transform.rotation.eulerAngles.y + 90f);
     }
 
     void OnTriggerStay(Collider other) {
