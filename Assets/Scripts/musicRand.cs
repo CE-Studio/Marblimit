@@ -33,6 +33,8 @@ public class musicRand : MonoBehaviour {
 
     // Update is called once per frame
     void Update() {
-        
+        if (!(a0.isPlaying || a1.isPlaying || a2.isPlaying || a3.isPlaying || a4.isPlaying)) {
+            Start();
+        }
     }
 }
