@@ -14,11 +14,6 @@ public class VolumeController : MonoBehaviour
     public AudioSource sound;
     public AudioSource switching;
 
-    void Start()
-    {
-        morph.Play();
-    }
-
     void Update()
     {
         breaking.volume = volume / 10;

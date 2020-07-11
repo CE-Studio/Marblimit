@@ -17,6 +17,7 @@ public class playerMove : MonoBehaviour {
     void Start() {
         spawnpoint = transform.position;
         rb = GetComponent<Rigidbody>();
+        fuel = 15.0f;
     }
 
     // Update is called once per frame
