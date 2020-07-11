@@ -5,8 +5,9 @@ using UnityEngine;
 public class flasher : MonoBehaviour
 {
     //public Animation anim;
-    //private bool tog = true;
+    private bool tog = true;
     public Animator anim;
+    public AudioSource alert;
 
     // Start is called before the first frame update
     void Start()
@@ -24,17 +25,18 @@ public class flasher : MonoBehaviour
     void Update()
     {
         if (playerMove.fuel < 3f) {
-            //if (tog) {
-            //    tog = false;
+            if (tog) {
+                tog = false;
+                alert.Play();
             //    anim.Play("MovementGaugeFlashing");
             //    print("hjhjhj");
-            //}
+            }
             anim.SetBool("OutOfJuice", true);
         } else {
-            //if (!tog) {
-            //    tog = true;
+            if (!tog) {
+                tog = true;
             //    anim.Play("MovementGaugeStatic");
-            //}
+            }
             anim.SetBool("OutOfJuice", false);
         }
     }

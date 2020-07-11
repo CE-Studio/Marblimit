@@ -13,6 +13,8 @@ public class win : MonoBehaviour
     private float i = 0f;
     public static float gameTime = 120f;
     public static int iter = 0;
+    public AudioSource alert;
+    private bool tog = true;
 
 
     // Start is called before the first frame update
@@ -36,6 +38,14 @@ public class win : MonoBehaviour
                 GameObject ObjectNameeeee = Instantiate(wall, new Vector3(0, 0, 0), Quaternion.identity) as GameObject;
                 i += Random.Range(0f, 1.0f);
             }
+        }
+        if (gameTime < 30f) {
+            if (tog) {
+                tog = false;
+                alert.Play();
+            }
+        } else {
+            tog = true;
         }
     }
 

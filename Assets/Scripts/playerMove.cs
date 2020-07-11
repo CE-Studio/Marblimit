@@ -40,13 +40,13 @@ public class playerMove : MonoBehaviour {
             HorizValueLastFrame = Mathf.Abs(Input.GetAxis("Horizontal"));
             VertiValueLastFrame = Mathf.Abs(Input.GetAxis("Vertical"));
         }
-        if (transform.position.y < -10f || Input.GetKeyDown("r")) {
+        if (transform.position.y < -10f || Input.GetKey("r")) {
             rspawn = true;
         }
-        if (Input.GetKeyDown("space") && transform.position.y < 0.6f) {
+        if (Input.GetKey("space") && transform.position.y < 0.6f) {
             rb.AddForce(Random.Range(-1000, 1000), Random.Range(500, 1000), Random.Range(-1000, 1000));
         }
-        if (Input.GetKeyDown("escape"))
+        if (Input.GetKey("escape"))
         {
             SceneManager.LoadScene(sceneName:"Titlescreen");
         }
