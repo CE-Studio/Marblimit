@@ -2031,7 +2031,7 @@ Transform:
   m_GameObject: {fileID: 457673717}
   m_LocalRotation: {x: 0.12397201, y: 0.57634884, z: -0.06699572, w: 0.8049624}
   m_LocalPosition: {x: 0.84, y: 3.8, z: 0}
-  m_LocalScale: {x: 0.065, y: 0.1, z: 1}
+  m_LocalScale: {x: 0.1, y: 0.1, z: 1}
   m_Children: []
   m_Father: {fileID: 839118508}
   m_RootOrder: 4
@@ -2044,7 +2044,7 @@ TextMesh:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 457673717}
-  m_Text: Placeholder Title
+  m_Text: Marblimit
   m_OffsetZ: 0
   m_CharacterSize: 1
   m_LineSpacing: 1
