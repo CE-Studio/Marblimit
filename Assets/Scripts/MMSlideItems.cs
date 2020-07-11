@@ -11,11 +11,11 @@ public class MMSlideItems : MonoBehaviour
 
     void Start()
     {
-        inactiveLocation = new Vector3(-1199, -84.27f, 1);
-        activeLocation = new Vector3(-401, -84.27f, 1);
+        inactiveLocation = new Vector3(-185.2856f, 169.8671f, 0.464375f);
+        activeLocation = new Vector3(185.2856f, 169.8671f, 0.464375f);
         menuState = "Main";
     }
-
+    
     void Update()
     {
         if (menuState == "Main")
