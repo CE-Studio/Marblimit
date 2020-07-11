@@ -13,9 +13,4 @@ public class ToggleMainText : MonoBehaviour
             mainTextVisible = !mainTextVisible;
         }
     }
-
-    void Update()
-    {
-        print(mainTextVisible);
-    }
 }
