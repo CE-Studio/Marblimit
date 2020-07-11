@@ -15,6 +15,7 @@ public class win : MonoBehaviour
     public static int iter = 0;
     public AudioSource alert;
     private bool tog = true;
+    public Material test;
 
 
     // Start is called before the first frame update
@@ -22,6 +23,7 @@ public class win : MonoBehaviour
     {
         gameTime = 120f;
         iter = 0;
+        test.SetColor("_Color", new Color(1, 0.870f, 0, 1));
     }
 
     // Update is called once per frame
@@ -51,6 +53,7 @@ public class win : MonoBehaviour
 
     void OnTriggerEnter(Collider other) {
         if (other.name == "PlayerBall") {
+            test.SetColor("_Color", new Color(Random.Range(0f, 1f), Random.Range(0f, 1f), Random.Range(0f, 1f), 1));
             hasWon = true;
             gameTime = 120f;
             playerMove.rspawn = true;

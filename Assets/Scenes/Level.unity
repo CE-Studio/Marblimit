@@ -3782,6 +3782,7 @@ MonoBehaviour:
   lift: {fileID: 4118494883346744992, guid: bbe4bcb131991a54ab65c87a5deddcf6, type: 3}
   wall: {fileID: 38757907109578273, guid: b8a9bf3dd3f8d5d4db6660ff607f4eb3, type: 3}
   alert: {fileID: 59635896}
+  test: {fileID: 2100000, guid: bd2d742ee2ce7a740ae0cf992a38be74, type: 2}
 --- !u!135 &1024999714
 SphereCollider:
   m_ObjectHideFlags: 0
