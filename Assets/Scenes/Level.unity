@@ -3957,11 +3957,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d43abd20dfa0ab449915704122d9a93, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  a0: {fileID: 0}
-  a1: {fileID: 0}
-  a2: {fileID: 0}
-  a3: {fileID: 0}
-  a4: {fileID: 0}
+  a0: {fileID: 467274474}
+  a1: {fileID: 1442823524}
+  a2: {fileID: 2138995547}
+  a3: {fileID: 1728491590}
+  a4: {fileID: 1020651962}
 --- !u!1 &1239753340
 GameObject:
   m_ObjectHideFlags: 0
