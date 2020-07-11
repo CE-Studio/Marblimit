@@ -9,6 +9,7 @@ public class PlayButton : MonoBehaviour
     public Sprite inactiveButton;
     public Sprite hoveringButton;
     public Sprite pressedButton;
+    private bool pressed;
     
     void Start()
     {
@@ -17,7 +18,10 @@ public class PlayButton : MonoBehaviour
 
     void OnMouseOver()
     {
-        spriteRenderer.sprite = hoveringButton;
+        if (!pressed)
+        {
+            spriteRenderer.sprite = hoveringButton;
+        }
     }
 
     void OnMouseExit()
@@ -27,6 +31,7 @@ public class PlayButton : MonoBehaviour
 
     void OnMouseDown()
     {
+        pressed = true;
         spriteRenderer.sprite = pressedButton;
         SceneManager.LoadScene(sceneName:"Level");
     }
@@ -34,5 +39,6 @@ public class PlayButton : MonoBehaviour
     void OnMouseUp()
     {
         spriteRenderer.sprite = hoveringButton;
+        pressed = false;
     }
 }

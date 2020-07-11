@@ -8,6 +8,7 @@ public class OptionsButton : MonoBehaviour
     public Sprite inactiveButton;
     public Sprite hoveringButton;
     public Sprite pressedButton;
+    private bool pressed;
 
     void Start()
     {
@@ -16,7 +17,10 @@ public class OptionsButton : MonoBehaviour
 
     void OnMouseOver()
     {
-        spriteRenderer.sprite = hoveringButton;
+        if (!pressed)
+        {
+            spriteRenderer.sprite = hoveringButton;
+        }
     }
 
     void OnMouseExit()
@@ -26,11 +30,13 @@ public class OptionsButton : MonoBehaviour
 
     void OnMouseDown()
     {
+        pressed = true;
         spriteRenderer.sprite = pressedButton;
     }
 
     void OnMouseUp()
     {
         spriteRenderer.sprite = hoveringButton;
+        pressed = false;
     }
 }
