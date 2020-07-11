@@ -5,7 +5,7 @@ using UnityEngine;
 public class playerMove : MonoBehaviour {
     // Start is called before the first frame update
 
-    public Rigidbody rb;
+    public static Rigidbody rb;
     public static float force = 3.0f;
     public static float fuel = 15.0f;
     private float HorizValueLastFrame;
@@ -15,6 +15,7 @@ public class playerMove : MonoBehaviour {
 
     void Start() {
         spawnpoint = transform.position;
+        rb = GetComponent<Rigidbody>();
     }
 
     // Update is called once per frame
