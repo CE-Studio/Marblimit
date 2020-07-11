@@ -14,6 +14,6 @@ public class LockCam : MonoBehaviour {
     // Update is called once per frame
     void FixedUpdate() {
         ballPos = GameObject.Find("PlayerBall").transform.position;
-        transform.position = ballPos + new Vector3(0, 5, -10);
+        transform.position = ballPos + new Vector3(6, 5, -6);
     }
 }

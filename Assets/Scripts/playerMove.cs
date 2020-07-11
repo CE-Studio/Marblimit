@@ -21,9 +21,18 @@ public class playerMove : MonoBehaviour {
     void FixedUpdate() {
         checkRespawn();
         if (fuel > 0) {
-            rb.AddForce(Input.GetAxis("Horizontal") * force, 0f, Input.GetAxis("Vertical") * force);
             if ((Input.GetAxis("Horizontal") != 0 && Mathf.Abs(Input.GetAxis("Horizontal")) >= HorizValueLastFrame) || (Input.GetAxis("Vertical") != 0 && Mathf.Abs(Input.GetAxis("Vertical")) >= VertiValueLastFrame)) {
                 fuel -= Time.deltaTime;
+                if (Input.GetAxis("Vertical") > 0) {
+                    rb.AddForce(force * -1f, 0f, force);
+                } else if (Input.GetAxis("Vertical") < 0) {
+                    rb.AddForce(force, 0f, force * -1f);
+                }
+                if (Input.GetAxis("Horizontal") > 0) {
+                    rb.AddForce(force * -1f, 0f, force * -1f);
+                } else if (Input.GetAxis("Horizontal") < 0) {
+                    rb.AddForce(force, 0f, force);
+                }
             }
             HorizValueLastFrame = Mathf.Abs(Input.GetAxis("Horizontal"));
             VertiValueLastFrame = Mathf.Abs(Input.GetAxis("Vertical"));
