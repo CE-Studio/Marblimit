@@ -22,7 +22,17 @@ public class win : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (Input.GetKeyDown("backspace")) {
+            i = 0f;
+            while (i < 5) {
+                GameObject ObjectName = Instantiate(boost, new Vector3(0, 0, 0), Quaternion.identity) as GameObject;
+                GameObject ObjectNamee = Instantiate(lspin, new Vector3(0, 0, 0), Quaternion.identity) as GameObject;
+                GameObject ObjectNameee = Instantiate(sspin, new Vector3(0, 0, 0), Quaternion.identity) as GameObject;
+                GameObject ObjectNameeee = Instantiate(lift, new Vector3(0, 0, 0), Quaternion.identity) as GameObject;
+                GameObject ObjectNameeeee = Instantiate(wall, new Vector3(0, 0, 0), Quaternion.identity) as GameObject;
+                i += Random.Range(0f, 1.0f);
+            }
+        }
     }
 
     void OnTriggerEnter(Collider other) {
