@@ -9,4 +9,19 @@ public class MoveToLevel : MonoBehaviour
     {
         SceneManager.LoadScene(sceneName:"Level");
     }
+
+    public void OpenOptions()
+    {
+        MMSlideItems.menuState = "Options";
+    }
+
+    public void OpenCredits()
+    {
+        MMSlideItems.menuState = "Credits";
+    }
+
+    public void BackToMenu()
+    {
+        MMSlideItems.menuState = "Main";
+    }
 }
