@@ -3171,7 +3171,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 3cafa7ed5b3e5374ea0e5572fbbe7457, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 1
@@ -13296,15 +13296,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d9d47f6b80dd97b44829ddc93930a290, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scene:
-    m_Handle: 0
+  breaking: {fileID: 482394674}
   morph: {fileID: 482394674}
-  breaking: {fileID: 0}
-  pulven: {fileID: 0}
-  rules: {fileID: 0}
-  sound: {fileID: 0}
-  switching: {fileID: 0}
-  volumeValue: {fileID: 1561432919}
+  pulven: {fileID: 482394674}
+  rules: {fileID: 482394674}
+  sound: {fileID: 482394674}
+  switching: {fileID: 482394674}
 --- !u!1 &2123055460
 GameObject:
   m_ObjectHideFlags: 0

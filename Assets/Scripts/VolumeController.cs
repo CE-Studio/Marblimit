@@ -6,38 +6,26 @@ using UnityEngine.UI;
 
 public class VolumeController : MonoBehaviour
 {
-    public Scene scene;
-    private string sceneName;
-    public static int volume = 5;
-    public AudioSource morph;
+    public static float volume = 5;
     public AudioSource breaking;
+    public AudioSource morph;
     public AudioSource pulven;
     public AudioSource rules;
     public AudioSource sound;
     public AudioSource switching;
-    public TextMesh volumeValue;
 
     void Start()
     {
-        volumeValue = GetComponent<TextMesh>();
+        morph.Play();
     }
 
     void Update()
     {
-        scene = SceneManager.GetActiveScene();
-        sceneName = scene.name;
-        if (sceneName == "Titlescreen")
-        {
-            breaking.volume = volume / 10;
-            volumeValue.text = ("" + volume);
-        }
-        else if (sceneName == "Level")
-        {
-            morph.volume = volume / 10;
-            pulven.volume = volume / 10;
-            rules.volume = volume / 10;
-            sound.volume = volume / 10;
-            switching.volume = volume / 10;
-        }
+        breaking.volume = volume / 10;
+        morph.volume = volume / 10;
+        pulven.volume = volume / 10;
+        rules.volume = volume / 10;
+        sound.volume = volume / 10;
+        switching.volume = volume / 10;
     }
 }
