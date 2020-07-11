@@ -4,34 +4,38 @@ using UnityEngine;
 
 public class flasher : MonoBehaviour
 {
-    private Animation anim;
-    private bool tog = true;
+    //public Animation anim;
+    //private bool tog = true;
+    public Animator anim;
 
     // Start is called before the first frame update
     void Start()
     {
-        anim = gameObject.GetComponent<Animation>();
-        print(anim.GetClipCount());
-        foreach (AnimationState state in anim) {
-            state.speed = 1F;
-        }
-        anim.Play("graphidle");
+        //anim = gameObject.GetComponent<Animation>();
+        //print(anim.GetClipCount());
+        //foreach (AnimationState state in anim) {
+        //    state.speed = 1F;
+        //}
+        //anim.Play("MovementGaugeStatic");
+        anim.SetBool("OutOfJuice", false);
     }
 
     // Update is called once per frame
     void Update()
     {
         if (playerMove.fuel < 3f) {
-            if (tog) {
-                tog = false;
-                anim.Play("graphflash");
-                print("hjhjhj");
-            }
+            //if (tog) {
+            //    tog = false;
+            //    anim.Play("MovementGaugeFlashing");
+            //    print("hjhjhj");
+            //}
+            anim.SetBool("OutOfJuice", true);
         } else {
-            if (!tog) {
-                tog = true;
-                anim.Play("graphidle");
-            }
+            //if (!tog) {
+            //    tog = true;
+            //    anim.Play("MovementGaugeStatic");
+            //}
+            anim.SetBool("OutOfJuice", false);
         }
     }
 }
