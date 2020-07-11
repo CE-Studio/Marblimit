@@ -9,6 +9,7 @@ public class CreditsButton : MonoBehaviour
     public Sprite hoveringButton;
     public Sprite pressedButton;
     private bool pressed;
+    public Animator animator;
 
     void Start()
     {
@@ -32,6 +33,7 @@ public class CreditsButton : MonoBehaviour
     {
         pressed = true;
         spriteRenderer.sprite = pressedButton;
+        animator.SetInteger("Menustate", 2);
     }
 
     void OnMouseUp()
