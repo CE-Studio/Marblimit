@@ -23,7 +23,7 @@ public class playerMove : MonoBehaviour {
     // Update is called once per frame
     void FixedUpdate() {
         checkRespawn();
-        if (fuel > 0 || !win.hasTimedOut) {
+        if (fuel > 0 && !win.hasTimedOut) {
             if ((Input.GetAxis("Horizontal") != 0 && Mathf.Abs(Input.GetAxis("Horizontal")) >= HorizValueLastFrame) || (Input.GetAxis("Vertical") != 0 && Mathf.Abs(Input.GetAxis("Vertical")) >= VertiValueLastFrame)) {
                 fuel -= Time.deltaTime;
                 if (Input.GetAxis("Vertical") > 0) {
