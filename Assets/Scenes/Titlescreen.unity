@@ -3877,6 +3877,8 @@ GameObject:
   m_Component:
   - component: {fileID: 720306972}
   - component: {fileID: 720306973}
+  - component: {fileID: 720306974}
+  - component: {fileID: 720306975}
   m_Layer: 0
   m_Name: Volume up
   m_TagString: Untagged
@@ -3948,6 +3950,35 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &720306974
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 720306971}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: efe783145ed0d0848b25f71bd22241ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spriteRenderer: {fileID: 0}
+  inactiveButton: {fileID: 21300000, guid: e1a654583846c8a43bae9b4537b6c4d4, type: 3}
+  hoveringButton: {fileID: 21300000, guid: 4a4a3afd20a29c840904ec57436267ad, type: 3}
+  pressedButton: {fileID: 21300000, guid: 7d4856a94cc79fe4899adb5dea67628e, type: 3}
+--- !u!65 &720306975
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 720306971}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.6000004, y: 3.2, z: 0.20000005}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &757078637
 GameObject:
   m_ObjectHideFlags: 0
@@ -8917,6 +8948,7 @@ GameObject:
   - component: {fileID: 1561432918}
   - component: {fileID: 1561432920}
   - component: {fileID: 1561432919}
+  - component: {fileID: 1561432921}
   m_Layer: 0
   m_Name: Volume value
   m_TagString: Untagged
@@ -8999,6 +9031,19 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!114 &1561432921
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1561432917}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: abc9f53760ca0494cb93cc7d9881db98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  value: {fileID: 0}
 --- !u!1 &1588367852
 GameObject:
   m_ObjectHideFlags: 0
@@ -9967,6 +10012,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1684977498}
   - component: {fileID: 1684977499}
+  - component: {fileID: 1684977501}
+  - component: {fileID: 1684977500}
   m_Layer: 0
   m_Name: Volume down
   m_TagString: Untagged
@@ -10038,6 +10085,35 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!65 &1684977500
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1684977497}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.6000004, y: 3.2, z: 0.20000005}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1684977501
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1684977497}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f60448cb76bfd32408e5fc0955d2cdd3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spriteRenderer: {fileID: 0}
+  inactiveButton: {fileID: 21300000, guid: 01b83c244a1da9c47b5ab3ea5b590d85, type: 3}
+  hoveringButton: {fileID: 21300000, guid: ab2244216f0e89143ac4d179b5d117d6, type: 3}
+  pressedButton: {fileID: 21300000, guid: 15bfae7d72612a842be7985efd9727c7, type: 3}
 --- !u!1 &1696873730
 GameObject:
   m_ObjectHideFlags: 0

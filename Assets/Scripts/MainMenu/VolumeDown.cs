@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class VolumeUp : MonoBehaviour
+public class VolumeDown : MonoBehaviour
 {
     public SpriteRenderer spriteRenderer;
     public Sprite inactiveButton;
@@ -32,9 +32,9 @@ public class VolumeUp : MonoBehaviour
     {
         pressed = true;
         spriteRenderer.sprite = pressedButton;
-        if (VolumeController.volume < 10)
+        if (VolumeController.volume > 0)
         {
-            VolumeController.volume++;
+            VolumeController.volume--;
         }
     }
 

@@ -3,7 +3,11 @@ guid: efe783145ed0d0848b25f71bd22241ca
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - spriteRenderer: {instanceID: 0}
+  - inactiveButton: {fileID: 21300000, guid: e1a654583846c8a43bae9b4537b6c4d4, type: 3}
+  - hoveringButton: {fileID: 21300000, guid: 4a4a3afd20a29c840904ec57436267ad, type: 3}
+  - pressedButton: {fileID: 21300000, guid: 7d4856a94cc79fe4899adb5dea67628e, type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
