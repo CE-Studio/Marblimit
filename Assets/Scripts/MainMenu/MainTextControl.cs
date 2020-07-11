@@ -4,22 +4,22 @@ using UnityEngine;
 
 public class MainTextControl : MonoBehaviour
 {
-    private Vector3 originalposition;
+    private Vector3 originalPosition;
 
     void Start()
     {
-        originalposition = transform.position;
+        originalPosition = transform.position;
     }
 
     void Update()
     {
         if (ToggleMainText.mainTextVisible)
         {
-            transform.position = originalposition;
+            transform.position = originalPosition;
         }
         else if (!ToggleMainText.mainTextVisible)
         {
-            transform.position = new Vector3();
+            transform.position = new Vector3(originalPosition.x, originalPosition.y - 20, originalPosition.z);
         }
     }
 }
