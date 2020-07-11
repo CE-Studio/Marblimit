@@ -8,7 +8,7 @@ public class boost : MonoBehaviour {
     public static float stren = 10f;
 
     void Start() {
-        
+        stren = Random.Range(10f, 500f);
     }
 
     // Update is called once per frame

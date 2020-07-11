@@ -30,7 +30,7 @@ public class win : MonoBehaviour
             hasWon = true;
             playerMove.rspawn = true;
             i = 0f;
-            while (i < 3) {
+            while (i < 5) {
                 GameObject ObjectName = Instantiate(boost, new Vector3(0, 0, 0), Quaternion.identity) as GameObject;
                 GameObject ObjectNamee = Instantiate(lspin, new Vector3(0, 0, 0), Quaternion.identity) as GameObject;
                 GameObject ObjectNameee = Instantiate(sspin, new Vector3(0, 0, 0), Quaternion.identity) as GameObject;
