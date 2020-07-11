@@ -15,11 +15,11 @@ public class VolumeController : MonoBehaviour
     public AudioSource rules;
     public AudioSource sound;
     public AudioSource switching;
-    public Text volumeValue;
+    public TextMesh volumeValue;
 
     void Start()
     {
-        volumeValue = GetComponent<Text>();
+        volumeValue = GetComponent<TextMesh>();
     }
 
     void Update()
