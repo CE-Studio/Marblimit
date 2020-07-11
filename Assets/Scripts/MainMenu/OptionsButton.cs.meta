@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: caf4dac89fa25e34883321df94a4e8ee
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - spriteRenderer: {instanceID: 0}
+  - inactiveButton: {fileID: 21300000, guid: d17b6f157a1124748b1a7f18a82018db, type: 3}
+  - hoveringButton: {fileID: 21300000, guid: bd07139bee8a6f54d8f280fcc122f382, type: 3}
+  - pressedButton: {fileID: 21300000, guid: 949fd3bfbd9e65b4faa13b71b05f0b11, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
