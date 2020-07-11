@@ -12,7 +12,6 @@ public class playerMove : MonoBehaviour {
     private float VertiValueLastFrame;
     public static Vector3 spawnpoint;
     public static bool rspawn = false;
-    public static bool hit = true;
 
     void Start() {
         spawnpoint = transform.position;
@@ -41,9 +40,8 @@ public class playerMove : MonoBehaviour {
         if (transform.position.y < -100f) {
             rspawn = true;
         }
-        if (Input.GetKeyDown("space") && hit) {
+        if (Input.GetKeyDown("space") && transform.position.y < 0.6f) {
             rb.AddForce(Random.Range(-1000, 1000), Random.Range(500, 1000), Random.Range(-1000, 1000));
-            hit = false;
         }
     }
 
@@ -54,15 +52,7 @@ public class playerMove : MonoBehaviour {
             rb.velocity = Vector3.zero;
             rb.angularVelocity = Vector3.zero;
             fuel = 15f;
-            hit = true;
         }
     }
-
-    void OnCollisionEnter() {
-        hit = true;
-    }
-
-    void OnCollisionExit() {
-        hit = false;
-    }
+    
 }
