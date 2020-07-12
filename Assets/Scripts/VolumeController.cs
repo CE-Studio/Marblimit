@@ -7,6 +7,7 @@ using UnityEngine.UI;
 public class VolumeController : MonoBehaviour
 {
     public static float volume = 5;
+    public static float volumePitch = 1;
     public AudioSource breaking;
     public AudioSource morph;
     public AudioSource pulven;

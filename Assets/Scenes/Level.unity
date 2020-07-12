@@ -2569,6 +2569,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 51026f39655192047a8fdc437d24c95d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  breaking: {fileID: 467274474}
+  pulven: {fileID: 1442823524}
+  rules: {fileID: 2138995547}
+  sound: {fileID: 1728491590}
+  switching: {fileID: 1020651962}
 --- !u!1 &611083856
 GameObject:
   m_ObjectHideFlags: 0

@@ -6,14 +6,19 @@ using UnityEngine.SceneManagement;
 public class TimeoutTransitionInLevel : MonoBehaviour
 {
     private int steps;
-    private int stepsMax = 25;
+    private int stepsMax = 50;
     private bool transitionInProgress;
+    public AudioSource breaking;
+    public AudioSource pulven;
+    public AudioSource rules;
+    public AudioSource sound;
+    public AudioSource switching;
 
     void Update()
     {
         if (win.hasTimedOut && !transitionInProgress)
         {
-            transform.Rotate(15f, -45f, 0f);
+            transform.Rotate(15f, 0, 0f);
             transform.position += new Vector3(Random.Range(-0.5f, 0.5f), 0, 0);
             transitionInProgress = true;
         }
@@ -21,10 +26,16 @@ public class TimeoutTransitionInLevel : MonoBehaviour
         {
             if (steps < stepsMax)
             {
-                transform.position += new Vector3(0.025f, -0.1f, -0.025f);
+                transform.position += new Vector3(0.025f, -0.05f, -0.025f);
             }
             steps++;
-            if (steps > 100)
+            VolumeController.volumePitch -= 0.05f;
+            breaking.pitch = VolumeController.volumePitch;
+            pulven.pitch = VolumeController.volumePitch;
+            rules.pitch = VolumeController.volumePitch;
+            sound.pitch = VolumeController.volumePitch;
+            switching.pitch = VolumeController.volumePitch;
+            if (steps > 200)
             {
                 SceneManager.LoadScene(sceneName: "ded");
             }
