@@ -14,7 +14,7 @@ public class TimeoutTransitionInLevel : MonoBehaviour
     public AudioSource sound;
     public AudioSource switching;
 
-    void Update()
+    void FixedUpdate()
     {
         if (win.hasTimedOut && !transitionInProgress)
         {
@@ -37,6 +37,7 @@ public class TimeoutTransitionInLevel : MonoBehaviour
             switching.pitch = VolumeController.volumePitch;
             if (steps > 200)
             {
+                transitionInProgress = false;
                 SceneManager.LoadScene(sceneName: "ded");
             }
         }
