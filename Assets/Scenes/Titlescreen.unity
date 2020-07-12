@@ -13666,6 +13666,8 @@ MonoBehaviour:
   rules: {fileID: 482394674}
   sound: {fileID: 482394674}
   switching: {fileID: 482394674}
+  lowMoveAlarm: {fileID: 482394674}
+  lowTimeAlarm: {fileID: 482394674}
 --- !u!1 &2123055460
 GameObject:
   m_ObjectHideFlags: 0

@@ -14,6 +14,8 @@ public class VolumeController : MonoBehaviour
     public AudioSource rules;
     public AudioSource sound;
     public AudioSource switching;
+    public AudioSource lowMoveAlarm;
+    public AudioSource lowTimeAlarm;
 
     void Update()
     {
@@ -23,5 +25,7 @@ public class VolumeController : MonoBehaviour
         rules.volume = volume / 10;
         sound.volume = volume / 10;
         switching.volume = volume / 10;
+        lowMoveAlarm.volume = volume / 10;
+        lowTimeAlarm.volume = volume / 10;
     }
 }

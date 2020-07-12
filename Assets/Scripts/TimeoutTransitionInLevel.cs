@@ -14,6 +14,18 @@ public class TimeoutTransitionInLevel : MonoBehaviour
     public AudioSource sound;
     public AudioSource switching;
 
+    void Start()
+    {
+        VolumeController.volumePitch = 1;
+        breaking.pitch = 1;
+        pulven.pitch = 1;
+        rules.pitch = 1;
+        sound.pitch = 1;
+        switching.pitch = 1;
+        win.hasTimedOut = false;
+        transitionInProgress = false;
+    }
+
     void FixedUpdate()
     {
         if (win.hasTimedOut && !transitionInProgress)
@@ -26,7 +38,7 @@ public class TimeoutTransitionInLevel : MonoBehaviour
         {
             if (steps < stepsMax)
             {
-                transform.position += new Vector3(0.005f, -0.05f, -0.005f);
+                transform.position += new Vector3(0.0075f, -0.05f, -0.0075f);
             }
             steps++;
             VolumeController.volumePitch -= 0.005f;
@@ -37,6 +49,7 @@ public class TimeoutTransitionInLevel : MonoBehaviour
             switching.pitch = VolumeController.volumePitch;
             if (steps > 200)
             {
+                win.hasTimedOut = false;
                 transitionInProgress = false;
                 SceneManager.LoadScene(sceneName: "ded");
             }

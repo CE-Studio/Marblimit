@@ -4540,6 +4540,8 @@ MonoBehaviour:
   rules: {fileID: 2138995547}
   sound: {fileID: 1728491590}
   switching: {fileID: 1020651962}
+  lowMoveAlarm: {fileID: 840722065}
+  lowTimeAlarm: {fileID: 59635896}
 --- !u!1 &1239753340
 GameObject:
   m_ObjectHideFlags: 0
