@@ -18,7 +18,7 @@ public class TimeoutTransitionInLevel : MonoBehaviour
     {
         if (win.hasTimedOut && !transitionInProgress)
         {
-            transform.Rotate(15f, 0, 0f);
+            transform.Rotate(15f, 0f, 0f);
             transform.position += new Vector3(Random.Range(-0.5f, 0.5f), 0, 0);
             transitionInProgress = true;
         }
@@ -26,10 +26,10 @@ public class TimeoutTransitionInLevel : MonoBehaviour
         {
             if (steps < stepsMax)
             {
-                transform.position += new Vector3(0.025f, -0.05f, -0.025f);
+                transform.position += new Vector3(0.005f, -0.05f, -0.005f);
             }
             steps++;
-            VolumeController.volumePitch -= 0.05f;
+            VolumeController.volumePitch -= 0.005f;
             breaking.pitch = VolumeController.volumePitch;
             pulven.pitch = VolumeController.volumePitch;
             rules.pitch = VolumeController.volumePitch;
